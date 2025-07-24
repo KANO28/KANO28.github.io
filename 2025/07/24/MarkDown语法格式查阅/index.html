@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>MarkDown语法格式查阅 | 創生</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><meta name="page-config" content="{&quot;code_fold&quot;:null}"><script class="pjax-js">var config = {"root":"/","code_fold":15,"search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}};
+var page_config = {
+  code_fold: null
+};
+function updatePageConfig() {
+  var newPageConfig = document.querySelector('meta[name="page-config"]');
+  if (newPageConfig) {
+    page_config = JSON.parse(newPageConfig.content);
+  }
+}
+document.addEventListener('pjax:complete', function() { updatePageConfig(); });
+updatePageConfig();</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.woff2") format('woff2');
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+ --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+ --light-background: url('/img/bk.jpg');
+ --theme-encrypt-confirm: 'confirm'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>MarkDown语法格式查阅</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2025-07-24T03:46:29.000Z" id="date"> 2025-07-24</time></div></span><br><span>Last Update: <div class="control"><time datetime="2025-07-24T03:48:19.240Z" id="updated"> 2025-07-24</time></div></span></div></div><hr><div id="post-content"><blockquote>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。<br>Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。<br>Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。<br>Markdown 编写的文档后缀为 <code>.md</code>, <code>.markdown</code>。</p>
+</blockquote>
+<span id="more"></span>
+
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>👆 看起来就像上面这个。Markdown 标题有两种格式。</p>
+<h2 id="使用-和-标记一级和二级标题"><a href="#使用-和-标记一级和二级标题" class="headerlink" title="使用 = 和 - 标记一级和二级标题"></a>使用 <code>=</code> 和 <code>-</code> 标记一级和二级标题</h2><p><code>=</code> 和 <code>-</code> 标记语法格式如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-section">我展示的是一级标题</span><br><span class="hljs-section">=================</span><br><br><span class="hljs-section">我展示的是二级标题</span><br><span class="hljs-section">-----------------</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="使用-号标记"><a href="#使用-号标记" class="headerlink" title="使用 # 号标记"></a>使用 <code>#</code> 号标记</h2><p>使用 <code>#</code> 号可表示 1-6 级标题，一级标题对应一个 <code>#</code> 号，二级标题对应两个 <code>#</code> 号，以此类推。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-section"># 一级标题</span><br><span class="hljs-section">## 二级标题</span><br><span class="hljs-section">### 三级标题</span><br><span class="hljs-section">#### 四级标题</span><br><span class="hljs-section">##### 五级标题</span><br><span class="hljs-section">###### 六级标题</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="段落样式"><a href="#段落样式" class="headerlink" title="段落样式"></a>段落样式</h1><p>Markdown 段落没有特殊的格式，直接编写文字就好，段落的换行是使用两个以上空格加上回车。<br>当然也可以在段落后面使用一个空行来表示重新开始一个段落。</p>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p>Markdown 可以使用以下几种字体：</p>
+<blockquote>
+<p><em>斜体文本</em><br><strong>粗体文本</strong><br><em><strong>粗斜体文本</strong></em></p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-emphasis">*斜体文本*</span><br><span class="hljs-emphasis">_斜体文本_</span><br><br><span class="hljs-strong">**粗体文本**</span><br><span class="hljs-strong">__粗体文本__</span><br><br><span class="hljs-strong">**<span class="hljs-emphasis">*粗斜体文本*</span>**</span><br><span class="hljs-strong">__<span class="hljs-emphasis">_粗斜体文本_</span>__</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h2><p>可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。<br>也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
+<blockquote>
+<hr>
+<p>我</p>
+<hr>
+<p>裂</p>
+<hr>
+<p>开</p>
+<hr>
+<p>了</p>
+<hr>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-strong">***</span><br><span class="hljs-strong">* * *</span><br><span class="hljs-strong">**</span><span class="hljs-strong">***</span><br><span class="hljs-strong">- - -</span><br><span class="hljs-strong">----------</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线 <code>~~</code> 即可，实例如下：</p>
+<blockquote>
+<p>RUNOOB.COM<br>GOOGLE.COM<br><del>BAIDU.COM</del></p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown">RUNOOB.COM<br>GOOGLE.COM<br>~~BAIDU.COM~~<br></code></pre></td></tr></table></figure>
+
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>下划线可以通过 HTML 的 <code>&lt;u&gt;</code> 标签来实现：</p>
+<blockquote>
+<p><u>带下划线文本</u></p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>带下划线文本<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><p>脚注是对文本的补充说明。Markdown 脚注的格式如下:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[^要注明的文本]<br></code></pre></td></tr></table></figure>
+<p>以下实例演示了脚注的用法：</p>
+<blockquote>
+<p>阿米娅[^阿米娅]</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">创建脚注格式类似这样 [^阿米娅]<br>[<span class="hljs-symbol">^阿米娅</span>]: <span class="hljs-link">博士，您还有很多事情需要处理。现在还不能休息哦。</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="Markdown-列表"><a href="#Markdown-列表" class="headerlink" title="Markdown 列表"></a>Markdown 列表</h1><p>Markdown 支持有序列表和无序列表。<br>无序列表使用星号(<code>*</code>)、加号(<code>+</code>)或是减号(<code>-</code>)作为列表标记：</p>
+<blockquote>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">*</span> 第一项<br><span class="hljs-bullet">*</span> 第二项<br><span class="hljs-bullet">*</span> 第三项<br><br><span class="hljs-bullet">+</span> 第一项<br><span class="hljs-bullet">+</span> 第二项<br><span class="hljs-bullet">+</span> 第三项<br><br><span class="hljs-bullet">-</span> 第一项<br><span class="hljs-bullet">-</span> 第二项<br><span class="hljs-bullet">-</span> 第三项<br></code></pre></td></tr></table></figure>
+<p>有序列表使用数字并加上 <code>.</code> 号来表示，如：</p>
+<blockquote>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ol>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 第一项<br><span class="hljs-bullet">2.</span> 第二项<br><span class="hljs-bullet">3.</span> 第三项<br></code></pre></td></tr></table></figure>
+
+<h2 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h2><p>列表嵌套只需在子列表中的选项添加四个空格即可：</p>
+<ol>
+<li>第一项：<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素</li>
+</ul>
+</li>
+<li>第二项：<ul>
+<li>第二项嵌套的第一个元素</li>
+<li>第二项嵌套的第二个元素</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">1.</span> 第一项：<br><span class="hljs-bullet">    -</span> 第一项嵌套的第一个元素<br><span class="hljs-bullet">    -</span> 第一项嵌套的第二个元素<br><span class="hljs-bullet">2.</span> 第二项：<br><span class="hljs-bullet">    -</span> 第二项嵌套的第一个元素<br><span class="hljs-bullet">    -</span> 第二项嵌套的第二个元素<br></code></pre></td></tr></table></figure>
+
+<h1 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h1><p>Markdown 区块引用是在段落开头使用 <code>&gt;</code> 符号 ，然后后面紧跟一个空格符号：</p>
+<blockquote>
+<p>这是一个区块</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-quote">&gt; 这是一个区块</span><br></code></pre></td></tr></table></figure>
+<p>另外区块是可以嵌套的，一个 <code>&gt;</code> 符号是最外层，两个 <code>&gt;</code> 符号是第一层嵌套，以此类推：</p>
+<blockquote>
+<p>最外层</p>
+<blockquote>
+<p>第一层嵌套</p>
+<blockquote>
+<p>第二层嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-quote">&gt; 最外层</span><br><span class="hljs-quote">&gt; &gt; 第一层嵌套</span><br><span class="hljs-quote">&gt; &gt; &gt; 第二层嵌套</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="区块中使用列表"><a href="#区块中使用列表" class="headerlink" title="区块中使用列表"></a>区块中使用列表</h2><p>区块中使用列表实例如下：</p>
+<blockquote>
+<p>区块中使用列表</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+</ol>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+<li>第三项</li>
+</ul>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-quote">&gt; 区块中使用列表</span><br><span class="hljs-quote">&gt; 1. 第一项</span><br><span class="hljs-quote">&gt; 2. 第二项</span><br><span class="hljs-quote">&gt; + 第一项</span><br><span class="hljs-quote">&gt; + 第二项</span><br><span class="hljs-quote">&gt; + 第三项</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="列表中使用区块"><a href="#列表中使用区块" class="headerlink" title="列表中使用区块"></a>列表中使用区块</h2><p>如果要在列表项目内放进区块，那么就需要在 <code>&gt;</code> 前添加四个空格的缩进。<br>区块中使用列表实例如下：</p>
+<ul>
+<li>第一项<blockquote>
+<p>菜鸟教程<br>学的不仅是技术更是梦想</p>
+</blockquote>
+</li>
+<li>第二项<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">*</span> 第一项<br><span class="hljs-code">    &gt; 菜鸟教程</span><br><span class="hljs-code">    &gt; 学的不仅是技术更是梦想</span><br><span class="hljs-code">* 第二项</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h1><p>如果是段落上的一个函数或片段的代码可以用反引号把它包起来（`），例如：<br><code>printf()</code> 函数</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-code">`printf()`</span> 函数<br></code></pre></td></tr></table></figure>
+<h2 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h2><p>代码区块使用 4 个空格或者一个制表符（Tab 键）。<br>也可以用 &#96;&#96;&#96; 包裹一段代码，并指定一种语言（也可以不指定）：<br>实例如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript">$(<span class="hljs-variable language_">document</span>).<span class="hljs-title function_">ready</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-title function_">alert</span>(<span class="hljs-string">&#x27;RUNOOB&#x27;</span>);<br>&#125;);<br></code></pre></td></tr></table></figure>
+
+<h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><p>链接使用方法如下：</p>
+<blockquote>
+<p><a href="#%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80">链接名称</a><br>或者直接使用链接地址<br><a target="_blank" rel="noopener" href="https://github.com/Yue-plus">https://github.com/Yue-plus</a></p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">链接名称</span>](<span class="hljs-link">链接地址</span>)<br><span class="language-xml">&lt;https://github.com/Yue-plus&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h2><p>可以通过变量来设置一个链接，变量赋值在文档末尾进行：</p>
+<blockquote>
+<p>这个链接用 <code>1</code> 作为网址变量 [Google][1]<br>这个链接用 <code>mysite</code> 作为网址变量 [Yue_plus][mysite]</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown">这个链接用 1 作为网址变量 [<span class="hljs-string">Google</span>][<span class="hljs-symbol">1</span>]<br>这个链接用 mysite 作为网址变量 [<span class="hljs-string">Yue_plus</span>][<span class="hljs-symbol">mysite</span>]<br>然后在文档的结尾为变量赋值（网址）<br><br>  [1]: http://www.google.com/<br>  [mysite]: https://github.com/Yue-plus<br></code></pre></td></tr></table></figure>
+
+<h1 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h1><p>Markdown 图片语法格式如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">alt 属性文本</span>](<span class="hljs-link">图片地址</span>)<br>![<span class="hljs-string">alt 属性文本</span>](<span class="hljs-link">图片地址 &quot;可选标题&quot;</span>)<br></code></pre></td></tr></table></figure>
+<p>开头一个感叹号 !<br>接着一个方括号，里面放上图片的替代文字<br>接着一个英文括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。</p>
+<blockquote>
+<p class='item-img' data-src='https://ak.hypergryph.com/upload/images/20190228/118078295785f64dac736c6ade50bb76.jpg'><img src="https://ak.hypergryph.com/upload/images/20190228/118078295785f64dac736c6ade50bb76.jpg" alt="罗德岛集结" title="罗德岛集结"></p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">罗德岛集结</span>](<span class="hljs-link">https://ak.hypergryph.com/upload/images/20190228/118078295785f64dac736c6ade50bb76.jpg &quot;罗德岛集结&quot;</span>)<br></code></pre></td></tr></table></figure>
+<p>当然，你也可以像网址那样对图片网址使用变量:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">这个链接用 <span class="hljs-code">`2`</span> 作为网址变量 [<span class="hljs-string">凯尔希</span>][<span class="hljs-symbol">2</span>].<br>然后在文档的结尾为变量赋值（网址）<br><br>[<span class="hljs-symbol">2</span>]: <span class="hljs-link">https://ak.hypergryph.com/upload/images/20190228/143666074a406ecaa6cd4271dc7c5127.jpg</span><br></code></pre></td></tr></table></figure>
+<p>Markdown 还没有办法指定图片的高度与宽度，如果需要的话，也可以使用普通的 <code>&lt;img&gt;</code> 标签。</p>
+<blockquote class='item-img' data-src='https://ak.hypergryph.com/assets/index/images/ak/common/story/item_infected.png'><img src="https://ak.hypergryph.com/assets/index/images/ak/common/story/item_infected.png" width="200px">
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://ak.hypergryph.com/assets/index/images/ak/common/story/item_infected.png&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;200px&quot;</span>&gt;</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h1><p>Markdown 制作表格使用 <code>|</code> 来分隔不同的单元格，使用 <code>-</code> 来分隔表头和其他行。<br>语法格式如下：</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">|  表头   | 表头  |<br>|  ----  | ----  |<br>| 单元格  | 单元格 |<br>| 单元格  | 单元格 |<br></code></pre></td></tr></table></figure>
+
+<p>可以设置表格的对齐方式：</p>
+<p><code>-:</code> 设置内容和标题栏居右对齐。<br><code>:-</code> 设置内容和标题栏居左对齐。<br><code>:-:</code> 设置内容和标题栏居中对齐。</p>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<h1 id="Markdown-高级技巧"><a href="#Markdown-高级技巧" class="headerlink" title="Markdown 高级技巧"></a>Markdown 高级技巧</h1><p>##支持的 HTML 元素<br>不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。<br>目前支持的 HTML 元素有：<code>&lt;kbd&gt;</code> <code>&lt;b&gt;</code> <code>&lt;i&gt;</code> <code>&lt;em&gt;</code> <code>&lt;sup&gt;</code> <code>&lt;sub&gt;</code> <code>&lt;br&gt;</code>等，如：</p>
+<blockquote>
+<p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">使用 <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Ctrl<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span>+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Alt<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span>+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">kbd</span>&gt;</span></span>Del<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">kbd</span>&gt;</span></span> 重启电脑<br></code></pre></td></tr></table></figure>
+
+<h2 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h2><p>Markdown 使用了很多特殊符号来表示特定的意义，如果需要显示特定的符号则需要使用转义字符，Markdown 使用反斜杠转义特殊字符：</p>
+<blockquote>
+<p>** 正常显示星号 **</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-strong">**文本加粗**</span> <br>\<span class="hljs-emphasis">*\*</span> 正常显示星号 \<span class="hljs-emphasis">*\*</span><br></code></pre></td></tr></table></figure>
+<p>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs markdown">\   反斜线<br>`   反引号<br><span class="hljs-bullet">*</span>   星号<br>_   下划线<br>&#123;&#125;  花括号<br>[]  方括号<br>()  小括号<br><span class="hljs-section">#   井字号</span><br><span class="hljs-bullet">+</span>   加号<br><span class="hljs-bullet">-</span>   减号<br>.   英文句点<br>!   感叹号<br></code></pre></td></tr></table></figure>
+
+<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>当需要在编辑器中插入数学公式时，可以使用两个美元符 $$ 包裹 TeX 或 LaTeX 格式的数学公式来实现。提交后，问答和文章页会根据需要加载 Mathjax 对数学公式进行渲染。如：</p>
+<blockquote>
+<p>参考 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F">使用 <code>hexo-filter-mathjax</code> 过滤器来显示数学公式</a></p>
+</blockquote>
+<blockquote>
+<p>可以在行内包含数学公式： $i\hbar\frac{\partial}{\partial t}\psi&#x3D;-\frac{\hbar^2}{2m}\nabla^2\psi+V\psi$ 注意单 <code>$</code> 内部不能有空格！<br>$$<br>\begin{eqnarray*}<br>\nabla\cdot\vec{E}&amp;&#x3D;&amp;\frac{\rho}{\epsilon_0}\\<br>\nabla\cdot\vec{B}&amp;&#x3D;&amp;0\\<br>\nabla\times\vec{E}&amp;&#x3D;&amp;-\frac{\partial B}{\partial t}\\<br>\nabla\times\vec{B}&amp;&#x3D;&amp;\mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t}\right)\\<br>\end{eqnarray*}<br>$$</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs markdown">可以在行内包含数学公式： $i\hbar\frac&#123;\partial&#125;&#123;\partial t&#125;\psi=-\frac&#123;\hbar^2&#125;&#123;2m&#125;\nabla^2\psi+V\psi$ 注意单 <span class="hljs-code">`$`</span> 内部不能有空格！<br>$$<br>\begin&#123;eqnarray\<span class="hljs-emphasis">*&#125;</span><br><span class="hljs-emphasis">\nabla\cdot\vec&#123;E&#125;&amp;=&amp;\frac&#123;\rho&#125;&#123;\epsilon_0&#125;\\\\</span><br><span class="hljs-emphasis">\nabla\cdot\vec&#123;B&#125;&amp;=&amp;0\\\\</span><br><span class="hljs-emphasis">\nabla\times\vec&#123;E&#125;&amp;=&amp;-\frac&#123;\partial B&#125;&#123;\partial t&#125;\\\\</span><br><span class="hljs-emphasis">\nabla\times\vec&#123;B&#125;&amp;=&amp;\mu_0\left(\vec&#123;J&#125;+\epsilon_0\frac&#123;\partial E&#125;&#123;\partial t&#125;\right)\\\\</span><br><span class="hljs-emphasis">\end&#123;eqnarray\*</span>&#125;<br>$$<br></code></pre></td></tr></table></figure><div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2025/07/24/%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">建立一个属于你的博客！ Prev →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a><a onclick="BgmControl()"><svg id="bgm-control" viewBox="0 0 30 34" fill="#18d1ff" style="width: 24px; transition: transform .3s;margin-top: 4px"><path d="M25.998 23.422V11.29h3.999v12.132h-3.999zM19.497 6.234h4.001v22.243h-4.001V6.234zM12.998.867h4v32.978h-4V.867zm-6.5 5.367h4.001v22.243H6.498V6.234zm-6.5 5.056h4v12.132h-4V11.29z"></path></svg><audio id="bgm" src="/audio/bgm.mp3" autoplay loop crossorigin="anonymous"> </audio></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo" style="margin:0;border-radius:0;"></a><h1 id="Dr"><a href="/">創生</a></h1><div id="description"><p>这是用来记录我学习的地方</p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-%E5%92%8C-%E6%A0%87%E8%AE%B0%E4%B8%80%E7%BA%A7%E5%92%8C%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">使用 &#x3D; 和 - 标记一级和二级标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-%E5%8F%B7%E6%A0%87%E8%AE%B0"><span class="toc-number">1.2.</span> <span class="toc-text">使用 # 号标记</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AE%B5%E8%90%BD%E6%A0%B7%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">段落样式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-number">2.1.</span> <span class="toc-text">字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E9%9A%94%E7%BA%BF"><span class="toc-number">2.2.</span> <span class="toc-text">分隔线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="toc-number">2.3.</span> <span class="toc-text">删除线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="toc-number">2.4.</span> <span class="toc-text">下划线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%84%9A%E6%B3%A8"><span class="toc-number">2.5.</span> <span class="toc-text">脚注</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E5%88%97%E8%A1%A8"><span class="toc-number">3.</span> <span class="toc-text">Markdown 列表</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E5%B5%8C%E5%A5%97"><span class="toc-number">3.1.</span> <span class="toc-text">列表嵌套</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E5%8C%BA%E5%9D%97"><span class="toc-number">4.</span> <span class="toc-text">Markdown 区块</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E5%9D%97%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%88%97%E8%A1%A8"><span class="toc-number">4.1.</span> <span class="toc-text">区块中使用列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%8C%BA%E5%9D%97"><span class="toc-number">4.2.</span> <span class="toc-text">列表中使用区块</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E4%BB%A3%E7%A0%81"><span class="toc-number">5.</span> <span class="toc-text">Markdown 代码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%8C%BA%E5%9D%97"><span class="toc-number">5.1.</span> <span class="toc-text">代码区块</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E9%93%BE%E6%8E%A5"><span class="toc-number">6.</span> <span class="toc-text">Markdown 链接</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E9%93%BE%E6%8E%A5"><span class="toc-number">6.1.</span> <span class="toc-text">高级链接</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E5%9B%BE%E7%89%87"><span class="toc-number">7.</span> <span class="toc-text">Markdown 图片</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E8%A1%A8%E6%A0%BC"><span class="toc-number">8.</span> <span class="toc-text">Markdown 表格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7"><span class="toc-number">9.</span> <span class="toc-text">Markdown 高级技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89"><span class="toc-number">9.1.</span> <span class="toc-text">转义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">9.2.</span> <span class="toc-text">数学公式</span></a></li></ol></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
